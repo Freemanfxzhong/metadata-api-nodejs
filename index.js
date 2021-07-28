@@ -75,7 +75,7 @@ app.get('/api/token/:token_id', function(req, res) {
     // },
     'image': `${HOST}/images/${tokenId}.jpeg`,
     "description": "This is logo capture of hackademy 2021 - team Fairchild.Renaissance - member "+person.name, 
-    "external_url": "${HOST}/images/${tokenId}.jpeg"
+    "external_url": `${HOST}/images/${tokenId}.jpeg`
   }
   res.send(data)
 })
